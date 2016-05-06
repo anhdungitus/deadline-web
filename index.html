@@ -39,6 +39,120 @@
 	            $http.get('education.json').success(function(data){
 	               $scope.education_content = data.content; 
 	            });
+
+	            //thu 1
+			  	$scope.editorEnabled = false;
+			  
+			  	$scope.enableEditor = function() {
+				    $scope.editorEnabled = true;
+				    $scope.editableTitle = $scope.summary_content;
+			  	};
+			  
+			  	$scope.disableEditor = function() {
+			    	$scope.editorEnabled = false;
+			  	};
+			  
+			  	$scope.save = function() {
+			    	$scope.summary_content = $scope.editableTitle;
+			    	$scope.disableEditor();
+			  	};
+
+			  	//thu 2
+			  	$scope.editorEnabled1 = false;
+			  
+			  	$scope.enableEditor1 = function() {
+				    $scope.editorEnabled1 = true;
+				    $scope.editableTitle1 = $scope.experian_content;
+			  	};
+			  
+			  	$scope.disableEditor1 = function() {
+			    	$scope.editorEnabled1 = false;
+			  	};
+			  
+			  	$scope.save1 = function() {
+			    	$scope.experian_content = $scope.editableTitle1;
+			    	$scope.disableEditor1();
+			  	};
+
+			  	//thu 3
+			  	$scope.editorEnabled2 = false;
+			  
+			  	$scope.enableEditor2 = function() {
+				    $scope.editorEnabled2 = true;
+				    $scope.editableTitle2 = $scope.project_content;
+			  	};
+			  
+			  	$scope.disableEditor2 = function() {
+			    	$scope.editorEnabled2 = false;
+			  	};
+			  
+			  	$scope.save2 = function() {
+			    	$scope.project_content = $scope.editableTitle2;
+			    	$scope.disableEditor2();
+			  	};
+
+			  	//Thu 4
+			  	$scope.editorEnabled3 = false;
+			  
+			  	$scope.enableEditor3 = function() {
+				    $scope.editorEnabled3 = true;
+				    $scope.editableTitle3 = $scope.skills_content;
+			  	};
+			  
+			  	$scope.disableEditor3 = function() {
+			    	$scope.editorEnabled3 = false;
+			  	};
+			  
+			  	$scope.save3 = function() {
+			    	$scope.skills_content = $scope.editableTitle3;
+			    	$scope.disableEditor3();
+			  	};
+
+			  	//Thu 5
+			  	$scope.editorEnabled4 = false;
+			  
+			  	$scope.enableEditor4 = function() {
+				    $scope.editorEnabled4 = true;
+				    $scope.editableTitle4 = $scope.education_content;
+			  	};
+			  
+			  	$scope.disableEditor4 = function() {
+			    	$scope.editorEnabled4 = false;
+			  	};
+			  
+			  	$scope.save4 = function() {
+			    	$scope.education_content = $scope.editableTitle4;
+			    	$scope.disableEditor4();
+			  	};
+
+			  	//Thu 6
+			  	$scope.editorEnabled5 = false;
+			  
+			  	$scope.enableEditor5 = function() {
+				    $scope.editorEnabled5 = true;
+				    $scope.full_namex = $scope.full_name;
+				    $scope.positionx = $scope.position;
+				    $scope.industryx = $scope.industry;
+				    $scope.currentx = $scope.current;
+				    $scope.previousx = $scope.previous;
+				    $scope.educationx = $scope.education;
+				    $scope.profile_actionx = $scope.profile_action;
+			  	};
+			  
+			  	$scope.disableEditor5 = function() {
+			    	$scope.editorEnabled5 = false;
+			  	};
+			  
+			  	$scope.save5 = function() {
+			    	$scope.full_name = $scope.full_namex;
+			    	$scope.position = $scope.positionx;
+				    $scope.industry = $scope.industryx;
+				    $scope.current = $scope.currentx;
+				    $scope.previous = $scope.previousx;
+				    $scope.education = $scope.educationx;
+				    $scope.profile_action = $scope.profile_actionx;
+			    	$scope.disableEditor5();
+			  	};
             }]);  
         </script>
 </head>
